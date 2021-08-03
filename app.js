@@ -25,7 +25,7 @@ app.get('/', function(req, res) {
   });
 });
 
-app.listen(6900, function() {
+app.listen( process.env.PORT || 6900, function() {
   console.log("Server is running on port number 6900, nice.");
 })
 
